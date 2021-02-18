@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+## Masivian - prueba técnica
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `Herramientas utilizadas`
+
+    - React, Sass, SweetAlert2, Hooks, react-spinners, axios ...
+
+Hola Masivian soy Julián Andrés Vela desarrollador web. Tengo una gran experiencia en diseño, creación y personalización de sitios web, también en desarrollo de Apps web y móviles, manejando el FrontEnd y BackEnd. Para conocer mas sobre mi visitar [Mi sitio web](https://ingenierojulian.com/), Gracias por la oportunidad!.
 
 ## Available Scripts
 
-In the project directory, you can run:
+En el directorio del proyecto, puede ejecutar:
+
+### `npm i`
+
+Instala todas las dependencias del proyecto
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ejecuta la aplicación en modo de desarrollo.<br />
+Open [http://localhost:3000](http://localhost:3000) para verlo en el navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `NOTA IMPORTANTE!`
 
-### `npm test`
+Si el proyecto se queda llamando el API es conflicto de las CORS policy del GoogleChrome al ser una llamada a un API HTTPS, si tiene este problema por favor siga los siguientes pasos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `EN WINDOWS`
 
-### `npm run build`
+Presione la tecla Windows + R y en la ventana de “Ejecutar” copie el siguiente código y presiona ACEPTAR
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `EN MAC`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Abrir la terminal del MAC OS y ejecute el siguiente comando
+open /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sobre esta nueva Ventana podrá ejecutar la aplicación http://localhost:3000
