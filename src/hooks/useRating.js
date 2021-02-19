@@ -2,9 +2,9 @@ import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import Swal from "sweetalert2";
 
-const StarRating = () => {
+const useRating = (initialState) => {
   //State
-  const [rating, setRating] = useState(null);
+  const [rating, setRating] = useState(initialState);
   const [hover, setHover] = useState(null);
 
   const sendRating = (ratingValue) => {
@@ -34,7 +34,7 @@ const StarRating = () => {
     });
   };
 
-  return (
+  const StarRating = () => (
     <div className="rating">
       <h3>Deja tu calificación...</h3>
       {[...Array(5)].map((star, i) => {
@@ -59,6 +59,8 @@ const StarRating = () => {
       })}
     </div>
   );
+
+  return [rating, StarRating];
 };
 
-export default StarRating;
+export default useRating;

@@ -4,15 +4,17 @@ import clienteAxios from "./config/axios";
 
 //components
 import DataSheet from "./components/DataSheet";
-import StarRating from "./components/StarRating";
+import useRating from "./hooks/useRating";
 import Spinner from "./components/Spinner";
-
-import axios from "axios";
 
 function App() {
   //State
   const [comic, setComic] = useState({});
   const [loading, setLoading] = useState(true);
+
+  //custom hook
+  const [rating, StarRating] = useRating(null);
+  console.log(rating);
 
   useEffect(() => {
     const consultaComic = async () => {
